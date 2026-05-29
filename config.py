@@ -12,11 +12,11 @@ import os
 #                                          --------------------------------                                #
 
 # DIRECTORIES TO FILES AND PARAMETERS FOR (CIRCLE IN A HOMOGENEOUS MEDIA)
-SPECFEM2D = "/home/abolfazl/specfem2d"
-BASE_DIR  = "/home/abolfazl/bayesian-FWI/__.scratch.__/02-ddsurr/00_ellipse_dof_3_training_dataset_I(500)"
+SPECFEM2D = "/home/XXX/specfem2d"
+BASE_DIR  = "/home/XXX/bayesian-FWI/__.scratch.__/02-ddsurr/00_ellipse_dof_3_training_dataset_I(500)" # This is just an example directory :-)
 
 # Uncomment for DRAC clusters
-# BASE_DIR = "/home/akhanmo/projects/def-amalcolm/akhanmo/McMC/00-reduced-param/04_half_ellipse"
+# BASE_DIR = "/home/XXX/projects/def-YYY/XXX/McMC/00-reduced-param/04_half_ellipse"                   # This is just an example directory, if you wanted to run this code on DRAC
 
 # where WORKDIR: points to your own working directory
 # and SPECFEM2D: points to an existing specfem2D repository if available (if not set as '')
