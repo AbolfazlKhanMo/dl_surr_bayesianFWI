@@ -14,10 +14,11 @@ A convolutional neural network (CNN) regressor with MC Dropout provides both mis
 
 ## Requirements
 
-- Python 3.8+
+- Python 3.12+
 - PyTorch
 - NumPy, SciPy, scikit-learn, joblib, matplotlib
-- SPECFEM2D (compiled separately; set the path in `config.py`)
+
+- SPECFEM2D Version 8.1.0 (compiled separately; set the path in `config.py`)
 - Coreform Cubit (for mesh generation)
 - A Fortran compiler (for building CPML utilities)
 
