@@ -5,7 +5,7 @@
 #-----------------------------------------------------------
 
 # title of job
-title                           = SPECFEM2D CIRCLE ANOMALY - DoF=1
+title                           = SPECFEM2D CIRCLE ANOMALY - DoF=3
 
 # forward or adjoint simulation
 # 1 = forward, 2 = adjoint, 3 = both simultaneously
