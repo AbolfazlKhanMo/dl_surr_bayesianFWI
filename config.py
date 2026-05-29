@@ -16,15 +16,14 @@ SPECFEM2D = "/home/abolfazl/specfem2d"
 BASE_DIR  = "/home/abolfazl/bayesian-FWI/__.scratch.__/02-ddsurr/00_ellipse_dof_3_training_dataset_I(500)"
 
 # Uncomment for DRAC clusters
-# BASE_DIR = "/home/akhanmo/projects/def-amalcolm/akhanmo/mcmc/00-reduced-param/04_half_ellipse"
+# BASE_DIR = "/home/akhanmo/projects/def-amalcolm/akhanmo/McMC/00-reduced-param/04_half_ellipse"
 
 # where WORKDIR: points to your own working directory
 # and SPECFEM2D: points to an existing specfem2D repository if available (if not set as '')
 
 
-XwellGeo = False         # True: CROSS-WELL GEOMETRY / False: SURFACE SEISMIC
+XwellGeo = False         # True: CROSS-WELL GEOMETRY / False: SURFACE SEISMIC (optional atm, so leave it as False)
 sim_type = 2             # Simulation type: (1) ACOUSTIC (2) ELASTIC
-shot_number_to_plot = 1  # Shot number to plot shot and trace for data difference
 n_shots = 1              # Number of simultaneous shots
 n_cores = 1              # Number of dedicated cores to EACH SHOT!
 
@@ -41,8 +40,8 @@ n_sample = 160           # NTSTEP_BETWEEN_OUTPUT_SAMPLE from the parfile
 sigma           = 5.0                 # Noise percentage to each datapoint
 stdvs           = [50, 50, 50]        # Standard deviation for each model parameter
 initial_model   = [300, 300, 100]     # Initial Model - ONLY LOCATION
-parameter_min = [100, 100, 100]       # Minimum bound for proposals for each parameter (BUT ONLY RADIUS MATTERS FOR THIS EXAMPLE)
-parameter_max = [900, 900, 300]       # Maximum bound for proposals for each parameter (BUT ONLY RADIUS MATTERS FOR THIS EXAMPLE)
+parameter_min = [100, 100, 100]       # Minimum bound for proposals for each parameter
+parameter_max = [900, 900, 300]       # Maximum bound for proposals for each parameter
 
 # REGIME SELECTION
 # Options: "adaptive", "offline", "two_stage"
@@ -52,9 +51,9 @@ regime = "adaptive"
 gamma = 2.5e-1                     # Value for triggering UQ-aware refinement (adaptive only)
 beta = 5e-2                        # Value for triggering random refinement (adaptive only)
 K = 5                              # MC Dropout samples/forward passes
-R = 2                              # Max refinement iterations per MCMC step (adaptive only)
+R = 2                              # Max refinement iterations per McMC step (adaptive only)
 
-iterations      = 500              # Number of iterations/samples for MCMC
+iterations      = 500              # Number of iterations/samples for McMC
 
 
             ################# INTERPOLATION & VISUALIZATION PARAMS ##############
