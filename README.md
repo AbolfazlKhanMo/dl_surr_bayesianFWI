@@ -114,7 +114,7 @@ The McMC regime (adaptive, offline, or two-stage) and surrogate hyperparameters 
 
 The dataset used in the accompanying paper is available on Zenodo:
 
-DoI: https://doi.org/10.5281/zenodo.20381558
+DOI: https://doi.org/10.5281/zenodo.20381558
 
 <!-- ## Citation
 
@@ -133,6 +133,7 @@ If you use this code, please cite:
 ## License
 
 Bayesian FWI with Deep Learning Surrogates
+
 Copyright (C) 2026 Abolfazl Khan Mohammadi
 
 This program is free software: you can redistribute it and/or modify
