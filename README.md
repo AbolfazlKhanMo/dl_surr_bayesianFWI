@@ -19,7 +19,7 @@ A convolutional neural network (CNN) regressor with Monte Carlo Dropout (MCD) pr
 - NumPy, SciPy, scikit-learn, joblib, matplotlib
 
 - SPECFEM2D Version 8.1.0 (compiled separately; set the path in `config.py`)
-- Coreform Cubit (for mesh generation)
+- Coreform Cubit 2024.8+ (for mesh generation)
 - A Fortran compiler (for building CPML utilities)
 
 ## Repository Structure
@@ -106,7 +106,7 @@ python 04_McMC.py
    python 06_NN_McMC.py
    ```
 
-The McMC regime (adaptive, offline, or two-stage) and surrogate hyperparameters (refinement thresholds, MC Dropout samples) are set in `config.py`.
+The McMC regime (adaptive, offline, or two-stage) and surrogate hyperparameters (refinement thresholds, MCD samples) are set in `config.py`.
 
 `05_Sobol_dgen_mps.py` and `launch_mps_sobol.sh` are provided as utilities for running the Sobol data generation with NVIDIA MPS (Multi-Process Service) on GPU clusters.
 
