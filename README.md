@@ -4,13 +4,13 @@ Source code for Bayesian full waveform inversion using deep learning surrogate m
 
 ## Overview
 
-The workflow estimates posterior distributions of sought after parameters from seismic waveform data. Three McMC regimes are supported:
+The workflow estimates posterior distributions of sought after parameters from seismic waveform data. Three Markov chain Monte Carlo (McMC) regimes are supported:
 
 - **Adaptive**: the surrogate is refined on-the-fly during sampling using UQ-aware and random refinement triggers.
 - **Offline**: the surrogate is pre-trained on a fixed dataset and used without further updates.
 - **Two-stage**: an initial surrogate-only chain is followed by refinement with the exact solver.
 
-A convolutional neural network (CNN) regressor with MC Dropout provides both misfit predictions and epistemic uncertainty estimates, which guide when to call the expensive SPECFEM2D solver for surrogate retraining.
+A convolutional neural network (CNN) regressor with Monte Carlo Dropout (MCD) provides both misfit predictions and epistemic uncertainty estimates, which guide when to call SPECFEM2D solver for surrogate retraining.
 
 ## Requirements
 
