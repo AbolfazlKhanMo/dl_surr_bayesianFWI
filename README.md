@@ -114,7 +114,7 @@ The McMC regime (adaptive, offline, or two-stage) and surrogate hyperparameters 
 
 The dataset used in the accompanying paper is available on Zenodo:
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20381558.svg)](https://doi.org/10.5281/zenodo.20381558)
+DoI: https://doi.org/10.5281/zenodo.20381558
 
 <!-- ## Citation
 
