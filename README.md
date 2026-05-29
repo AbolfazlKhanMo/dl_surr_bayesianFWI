@@ -132,7 +132,7 @@ If you use this code, please cite:
 
 ## License
 
-surrogate-assisted Bayesian FWI
+Bayesian FWI with Deep Learning Surrogates
 Copyright (C) 2026 Abolfazl Khan Mohammadi
 
 This program is free software: you can redistribute it and/or modify
