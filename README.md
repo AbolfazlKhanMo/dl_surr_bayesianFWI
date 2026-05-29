@@ -1,6 +1,6 @@
 # Bayesian Full-Waveform Inversion Using Deep Learning Surrogate Models
 
-Source code for Bayesian full waveform inversion using deep learning surrogate models. The code couples a CNN-based surrogate model with the SPECFEM2D forward solver to accelerate Bayesian inference of subsurface velocity structures.
+Source code for Bayesian full waveform inversion using deep learning surrogate models. The code couples a DL-based surrogate model with the SPECFEM2D forward solver to accelerate Bayesian inference of subsurface velocity structures.
 
 ## Overview
 
@@ -10,7 +10,7 @@ The workflow estimates posterior distributions of sought after parameters from s
 - **Offline**: the surrogate is pre-trained on a fixed dataset and used without further updates.
 - **Two-stage**: an initial surrogate-only chain is followed by refinement with the exact solver.
 
-A CNN regressor with MC Dropout provides both misfit predictions and epistemic uncertainty estimates, which guide when to call the expensive SPECFEM2D solver for surrogate retraining.
+A convolutional neural network (CNN) regressor with MC Dropout provides both misfit predictions and epistemic uncertainty estimates, which guide when to call the expensive SPECFEM2D solver for surrogate retraining.
 
 ## Requirements
 
