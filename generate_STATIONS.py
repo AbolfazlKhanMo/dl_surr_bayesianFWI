@@ -39,7 +39,7 @@ def generate_stations(
 
         sid = f"S{i+1:04d}"
 
-        # Formatting chosen to mirror your sample spacing/precision.
+       
         line = (
             f"{sid:<6}"         # 'S0001' left-aligned in 6 chars
             f"    {station_code:<2}"
