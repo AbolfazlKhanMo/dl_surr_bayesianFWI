@@ -1,4 +1,4 @@
-# Bayesian Full-Waveform Inversion Using Deep Learning Surrogate Models
+# Bayesian Full Waveform Inversion Using Deep Learning Surrogate Models
 
 Source code for Bayesian full waveform inversion using deep learning surrogate models. The code couples a DL-based surrogate model with the SPECFEM2D forward solver to accelerate Bayesian inference of subsurface velocity structures.
 
